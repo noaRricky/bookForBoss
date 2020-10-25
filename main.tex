@@ -1,0 +1,79 @@
+\documentclass[a4paper,16pt，openany]{ctexart}
+\usepackage[top=1.7in,bottom=1.7in,left=1.65in,right=1.65in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{latexsym}
+\usepackage{CJK}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{pdfpages}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{textcomp}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=5pt}
+\setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=5pt}
+\setdescription{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=5pt}
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  % frame=single,
+  rulesepcolor=\color{red!20!green!20!blue!20},
+  basicstyle={\small\ttfamily},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  commentstyle=\color{red!10!green!70},    % 设置代码注释的颜色
+  showstringspaces=false,%不显示代码字符串中间的空格标记
+  stringstyle=\ttfamily, % 代码字符串的特殊格式
+  breaklines=true, %对过长的代码自动换行
+  extendedchars=false,
+  escapebegin=\begin{CJK*}{GBK}{hei},escapeend=\end{CJK*},      % 代码中出现中文必须加上，否则报错
+  texcl=true,
+  tabsize=3
+}
+
+\makeatletter
+\@addtoreset{equation}{section}
+\@addtoreset{table}{section}
+\@addtoreset{figure}{section}
+\@addtoreset{algorithm}{section}
+
+\makeatother
+
+\floatname{algorithm}{算法}
+\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+\renewcommand{\algorithmicensure}{\textbf{输出:}}
+
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\thetable} {\arabic{section}.\arabic{table}}
+\renewcommand{\thefigure} {\arabic{section}.\arabic{figure}}
+\renewcommand{\thealgorithm}{\arabic{section}.\arabic{algorithm}}
+
+\footskip 5mm
+\setlength{\parindent}{2\ccwd}
+\setlength{\parskip}{3pt}
+\topmargin -1mm
+\textheight 235mm
+\textwidth 150mm
+\oddsidemargin 0pt
+\evensidemargin 0pt
+
+\begin{document}
+\input{file1.tex}
+\end{document}
